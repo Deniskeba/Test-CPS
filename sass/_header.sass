@@ -1,0 +1,84 @@
+ 
+header
+    height: 60px
+    padding-top: 64px
+    img
+        position: absolute
+        margin: 15px 0 0 -180px
+
+.header
+    &__menu
+        border: none
+        display: block
+        width: 50px
+        height: 50px
+        background: #ffffff
+        border-radius: 50%
+        float: right
+        position: relative
+        margin: 10px 20px
+        span
+            position: absolute
+            top: 50%
+            margin-top: -1px
+            left: 50%
+            margin-left: -10px
+            width: 20px
+            height: 2px
+            background-color: #314584
+            &::before
+                content: ''
+                transform: translateY(-5px)
+                position: absolute
+                top: 50%
+                margin-top: -1px
+                left: 50%
+                margin-left: -10px
+                width: 20px
+                height: 2px
+                background-color: #314584
+            &::after
+                content: ''
+                transform: translateY(+5px)
+                position: absolute
+                top: 50%
+                margin-top: -1px
+                left: 50%
+                margin-left: -10px
+                width: 20px
+                height: 2px
+                background-color: #314584
+
+    &__wrapper
+        display: flex
+        flex-direction: row
+        justify-content: space-between 
+        line-height: 60px
+    &__t
+        padding-right: 40px
+        text-decoration: none
+        color: #314584
+        font-size: 18px
+        font-family: WorkSans-semi
+    &__l
+        padding-right: 50px
+        text-decoration: none
+        color: #314584
+        font-size: 18px
+        font-family: WorkSans-semi
+    &__button
+        width: 200px
+        height: 60px
+        background: #ffffff
+        border: none
+        color: #ff3946
+        font-size: 18px
+        font-family: WorkSans-semi
+        box-shadow: 5px 5px 8px 1px rgba(34, 60, 80, 0.2)
+        border-radius: 5px
+
+@media screen and ( min-width: 769px )
+    .header__menu
+        display: none
+    
+    

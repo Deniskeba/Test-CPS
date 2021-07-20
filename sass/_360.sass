@@ -1,0 +1,64 @@
+@media screen and ( max-width: 768px )
+    .container
+        margin: 0
+    header
+        padding: 0
+        img
+            position: relative
+            margin: 24px 20px
+    .header
+        &__t
+            text-align: center
+            line-height: 20px
+            padding: 0 4px
+            margin: 10px 0
+        &__wrapper
+            position: absolute
+            display: none
+            width: 100%
+            height: 200px
+            justify-content: center
+            background: #ffffff
+            
+        &__right
+            display: none
+        &__left
+            display: flex
+            font-size: 100px
+            justify-content: center
+            flex-direction: column
+    .main
+        height: auto
+        margin-top: 60px
+        &__title
+            p
+                margin: 0
+        &__wrapper
+            flex-direction: column
+            justify-content: center
+        &__title
+            text-align: center
+        &__subtitle
+            text-align: center
+        &__left
+            margin: 0
+        &__buttons
+            display: flex
+            justify-content: center
+        img
+            position: relative
+            margin: 20px 0
+            width: 100%
+    .block
+        &__title
+            text-align: center
+        &__content
+            flex-direction: column
+            flex-wrap: nowrap
+            justify-content: center
+            align-items: center
+        &__box
+            width: 80%
+.active
+    display: block
+    
